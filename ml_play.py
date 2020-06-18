@@ -102,7 +102,6 @@ class MLPlay:
             d=int(d)
             vote[d]=vote[d]+1
         m=1
-        print(vote)
         for i in range(10):
             if vote[i]>vote[m]:
                 m=i
@@ -121,7 +120,6 @@ class MLPlay:
         elif d==3:
             return ["MOVE_RIGHT", "SPEED"]
         elif d==4:
-            self.w=self.w
             return ["BRAKE"]
         elif d==5:           
             return ["MOVE_LEFT"]
