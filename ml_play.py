@@ -88,7 +88,7 @@ class MLPlay:
             self.car_pos = scene_info[self.player]
         """with open("Predict3.pickle","rb") as f:
             forest=pickle.load(f)"""
-        filename = path.join(path.dirname(__file__), 'Predict3.pickle')
+        filename = path.join(path.dirname(__file__), "Predict3.pickle")
         with open(filename,"rb") as f:
             forest=pickle.load(f)
         for i in range(10):
